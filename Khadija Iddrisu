@@ -1,0 +1,101 @@
+Last login: Fri Feb  4 20:13:06 on console
+(base) khadija@Khadijas-MBP ~ % pwd
+/Users/khadija
+(base) khadija@Khadijas-MBP ~ % cd documents/               
+(base) khadija@Khadijas-MBP documents % mkdir AMMI-git
+(base) khadija@Khadijas-MBP documents % ls
+AMMI-git	My Assignment
+(base) khadija@Khadijas-MBP documents % cd AMMI-git 
+(base) khadija@Khadijas-MBP AMMI-git % mkdir Khadija_Iddrisu
+(base) khadija@Khadijas-MBP AMMI-git % cd ..
+(base) khadija@Khadijas-MBP documents % mkdir AMMI-first
+(base) khadija@Khadijas-MBP documents % mv AMMI-first AMMI-git 
+(base) khadija@Khadijas-MBP documents % cd AMMI-git 
+(base) khadija@Khadijas-MBP AMMI-git % ls
+AMMI-first	Khadija_Iddrisu
+(base) khadija@Khadijas-MBP AMMI-git % touch identity.txt
+(base) khadija@Khadijas-MBP AMMI-git % head > identity.txt 
+Khadija Iddrisu
+Ghana
+Computer Science
+Deep Learning and Computer Vision
+
+(base) khadija@Khadijas-MBP AMMI-git % git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /Users/khadija/Documents/AMMI-git/.git/
+(base) khadija@Khadijas-MBP AMMI-git % git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	identity.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) khadija@Khadijas-MBP AMMI-git % git add .
+(base) khadija@Khadijas-MBP AMMI-git % git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   identity.txt
+
+(base) khadija@Khadijas-MBP AMMI-git % git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   identity.txt
+
+(base) khadija@Khadijas-MBP AMMI-git % git commit -m "first commit"
+[master (root-commit) bc8c49e] first commit
+ 1 file changed, 5 insertions(+)
+ create mode 100644 identity.txt
+(base) khadija@Khadijas-MBP AMMI-git % ls -a
+.		.git		Khadija_Iddrisu
+..		AMMI-first	identity.txt
+(base) khadija@Khadijas-MBP AMMI-git % git branch -M main 
+(base) khadija@Khadijas-MBP AMMI-git % git remote add origin https://github.com/Ikhadija-5/Git-assignment.git
+(base) khadija@Khadijas-MBP AMMI-git % 
+(base) khadija@Khadijas-MBP AMMI-git % git push -u origin main 
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 284 bytes | 284.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Ikhadija-5/Git-assignment.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+(base) khadija@Khadijas-MBP AMMI-git % history
+  171  mkdir AMMI-first
+  172  mv AMMI-first AMMI-git
+  173  cd AMMI-git
+  174  ls
+  175  touch identity.txt
+  176  head > identity.txt
+  177  git init
+  178  git status
+  179  git add .
+  180  git status
+  181  git status
+  182  git commit -m "first commit"
+  183  ls -a
+  184  git branch -M main 
+  185  git remote add origin https://github.com/Ikhadija-5/Git-assignment.git 
+  186  git push -u origin main 
+(base) khadija@Khadijas-MBP AMMI-git % 
